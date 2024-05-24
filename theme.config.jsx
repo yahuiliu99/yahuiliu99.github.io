@@ -1,11 +1,38 @@
-/*
- * @Date: 2023-03-21 21:19:59
- * @Author: Liu Yahui
- * @LastEditors: Liu Yahui
- * @LastEditTime: 2023-03-21 21:42:54
- */
 export default {
-    footer: <p>2023 © Yahui Liu.</p>,
+    footer: (
+      <div className="footer">
+        <hr />
+        <small style={{ display: 'block', marginTop: '6rem' }}>
+          {/* <abbr
+            title="This site and all its content are licensed under a Creative Commons Attribution-NonCommercial 4.0 International License."
+            style={{ cursor: 'help' }}
+          >
+            CC BY-NC 4.0
+          </abbr>{' '} */}
+          {new Date().getFullYear()} © Yahui Liu
+          <a className="feed" href="/feeds">
+            Feeds (RSS)
+          </a>
+        </small>
+        <style jsx>{`
+          a.link {
+            margin-right: 0.5rem;
+            font-size: 14px;
+            font-weight: normal;
+            font-style: italic;
+          }
+          a.feed {
+            float: right;
+          }
+          @media screen and (max-width: 480px) {
+            article {
+              padding-top: 2rem;
+              padding-bottom: 4rem;
+            }
+          }
+        `}</style>
+      </div>
+    ),
     head: ({ title, meta }) => (
       <>
         {meta.description && (
@@ -17,11 +44,11 @@ export default {
     ),
     readMore: 'Read More →',
     postFooter: null,
-    darkMode: false,
-    navs: [
-      {
-        url: 'https://github.com/shuding/nextra',
-        name: 'Nextra'
-      }
-    ]
+    darkMode: true,
+    // navs: [
+    //   {
+    //     url: 'https://github.com/yahuiliu99',
+    //     name: 'Github'
+    //   }
+    // ]
   }

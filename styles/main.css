@@ -63,3 +63,39 @@ img.next-image {
 .nav-line .nav-link {
   color: #69778c;
 }
+
+.custom-link {
+  color: #1982E1; /* 将链接文字颜色设置为蓝色 */
+  text-decoration: none; /* 移除下划线 */
+  transition: color 0.3s; /* 添加颜色变化的过渡效果 */
+  newWindow: true
+}
+
+.custom-link:hover {
+  color: blue; /* 鼠标悬停时链接文字颜色变为深蓝色 */
+}
+
+.introduction {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin: 20px;
+}
+
+  
+.imageContainer {
+    margin-right: 30px;
+}
+
+.textContainer {
+    flex: 1;
+}
+
+.textContainer h2 {
+    margin: 7px 0; /* 根据需要调整上下间距 */
+}
+
+.textContainer p {
+    margin: 2px 0; /* 根据需要调整上下间距 */
+}
