@@ -6,11 +6,12 @@
     "deploy": "next build && touch out/.nojekyll && git add out/ && git commit -m \"Deploy\" && git subtree push --prefix out origin gh-pages"
   },
   "dependencies": {
-    "next": "latest",
-    "nextra": "^2.2.19",
-    "nextra-theme-blog": "^2.2.19",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "next": "^14.2.3",
+    "nextra": "^2.13.4",
+    "nextra-theme-blog": "^2.13.4",
+    "npm": "^10.8.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
     "@types/node": "^18.11.5",
