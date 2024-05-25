@@ -2,8 +2,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "deploy": "next build && touch out/.nojekyll && git add out/ && git commit -m \"Deploy\" && git subtree push --prefix out origin gh-pages"
+    "build": "node ./scripts/gen-rss.js && next build",
+    "deploy": "git add . && git commit -m \"Deploy\" && git push"
   },
   "dependencies": {
     "@types/node": "^18.11.5",
@@ -14,6 +14,7 @@
     "nextra-theme-blog": "^2.13.4",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "rss": "^1.2.2",
     "typescript": "^4.8.4"
   }
 }
